@@ -44,4 +44,3 @@ export default function Intro() {
             </h1>
         </section>
     )
-}
