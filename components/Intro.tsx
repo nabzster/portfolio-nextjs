@@ -11,7 +11,7 @@ import { FaGithubSquare } from 'react-icons/fa'
 export default function Intro() {
     return (
         <section className="mb-28 max-w-[50rem] sm:mb-0 text-center">
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center mb-10">
                 <div className="relative">
                     <motion.div
                         initial={{ opacity: 0, scale: 0 }}
@@ -56,11 +56,11 @@ export default function Intro() {
                 delay: 0.15
             }}>
                 <Link href="#contact"
-                    className="group bg-gray-900 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">
+                    className="group tracking-tighter bg-gray-900 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">
                     Contact Me Here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition"/>
                 </Link>
 
-                <a href="/CV.pdf" download className="group flex items-center justify-center bg-white px-7 py-3 text-black gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 transition select-none cursor-pointer border border-black/10">
+                <a href="/CV.pdf" download className="group tracking-tighter flex items-center justify-center bg-white px-7 py-3 text-black gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 transition select-none cursor-pointer border border-black/10">
                     Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
                 </a>
 
