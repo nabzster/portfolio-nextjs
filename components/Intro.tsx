@@ -22,7 +22,7 @@ export default function Intro() {
                         }}>
                         <Image src="https://images.unsplash.com/photo-1562860149-691401a306f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3087&q=80"
                             alt="Display Photo" width="192" height="192" quality="95" priority={true}
-                            className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl" />
+                            className="h-36 w-36 rounded-full object-cover border-[0.35rem] border-white shadow-xl" />
                     </motion.div>
                     <motion.span
                         initial={{ opacity: 0, scale: 0 }}
@@ -49,27 +49,27 @@ export default function Intro() {
                 <span className="underline">React(Next.js)</span>.
             </motion.h1>
 
-            <motion.div className="flex flex-col sm:flex-row gap-2 justify-center px-4 text-lg font-medium"
-            initial={{ opacity: 0, y: 100}}
-            animate={{ opacity: 1, y: 0}}
-            transition={{
-                delay: 0.15
-            }}>
+            <motion.div className="flex flex-col justify-center sm:flex-row gap-2 px-4 text-lg font-medium"
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                    delay: 0.15
+                }}>
                 <Link href="#contact"
-                    className="group tracking-tighter bg-gray-900 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">
-                    Contact Me Here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition"/>
+                    className="group tracking-tighter bg-gray-900 text-white px-7 py-3 flex justify-center items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">
+                    Contact Me Here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
                 </Link>
 
-                <a href="/CV.pdf" download className="group tracking-tighter flex items-center justify-center bg-white px-7 py-3 text-black gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 transition select-none cursor-pointer border border-black/10">
+                <a href="/CV.pdf" download className="group tracking-tighter flex justify-center items-center bg-white px-7 py-3 text-black gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 transition select-none cursor-pointer border border-black/10">
                     Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
                 </a>
 
-                <a href="https://www.linkedin.com/in/alfredsylvanalfonso/" target="_blank" className="flex items-center justify-center bg-white p-4 text-gray-700 gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition select-none cursor-pointer border border-black/10">
-                    <BsLinkedin />
+                <a href="https://www.linkedin.com/in/alfredsylvanalfonso/" target="_blank" className="flex justify-center bg-white p-4 text-gray-700 gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition select-none cursor-pointer border border-black/10">
+                    <BsLinkedin/>
                 </a>
 
-                <a className="flex items-center justify-center bg-white p-4 text-[1.35rem] text-gray-700 gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition select-none cursor-pointer border border-black/10">
-                    <FaGithubSquare />
+                <a className="flex justify-center bg-white p-4 text-[1.35rem] text-gray-700 gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition select-none cursor-pointer border border-black/10">
+                    <FaGithubSquare /> 
                 </a>
             </motion.div>
         </section>
