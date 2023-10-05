@@ -49,24 +49,29 @@ export default function Intro() {
                 <span className="underline">React(Next.js)</span>.
             </motion.h1>
 
-            <div className="flex gap-2 justify-center">
+            <motion.div className="flex flex-col sm:flex-row gap-2 justify-center px-4 text-lg font-medium"
+            initial={{ opacity: 0, y: 100}}
+            animate={{ opacity: 1, y: 0}}
+            transition={{
+                delay: 0.15
+            }}>
                 <Link href="#contact"
-                    className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full">
-                    Contact Me Here <BsArrowRight />
+                    className="group bg-gray-900 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">
+                    Contact Me Here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition"/>
                 </Link>
 
-                <a className="flex items-center bg-white px-7 py-3 text-black gap-2 rounded-full">
-                    Resume <HiDownload />
+                <a href="/CV.pdf" download className="group flex items-center justify-center bg-white px-7 py-3 text-black gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 transition select-none cursor-pointer border border-black/10">
+                    Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
                 </a>
 
-                <a className="flex items-center bg-white p-4 text-gray-700 gap-2 rounded-full">
+                <a href="https://www.linkedin.com/in/alfredsylvanalfonso/" target="_blank" className="flex items-center justify-center bg-white p-4 text-gray-700 gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition select-none cursor-pointer border border-black/10">
                     <BsLinkedin />
                 </a>
 
-                <a className="flex items-center bg-white p-4 text-[1.35rem] text-gray-700 gap-2 rounded-full">
+                <a className="flex items-center justify-center bg-white p-4 text-[1.35rem] text-gray-700 gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition select-none cursor-pointer border border-black/10">
                     <FaGithubSquare />
                 </a>
-            </div>
+            </motion.div>
         </section>
     )
 }
