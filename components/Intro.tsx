@@ -11,7 +11,7 @@ import { FaGithubSquare } from 'react-icons/fa'
 export default function Intro() {
     return (
         <section className="mb-28 max-w-[50rem] sm:mb-0 text-center scroll-mt-28" id="home">
-            <div className="flex items-center justify-center mb-10">
+            <div className="flex items-center justify-center">
                 <div className="relative">
                     <motion.div
                         initial={{ opacity: 0, scale: 0 }}
@@ -22,7 +22,7 @@ export default function Intro() {
                         }}>
                         <Image src="https://images.unsplash.com/photo-1562860149-691401a306f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3087&q=80"
                             alt="Display Photo" width="192" height="192" quality="95" priority={true}
-                            className="h-36 w-36 rounded-full object-cover border-[0.35rem] border-white shadow-xl" />
+                            className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl" />
                     </motion.div>
                     <motion.span
                         initial={{ opacity: 0, scale: 0 }}
@@ -49,14 +49,14 @@ export default function Intro() {
                 <span className="underline">React(Next.js)</span>.
             </motion.h1>
 
-            <motion.div className="flex flex-col justify-center sm:flex-row gap-2 px-4 text-lg font-medium"
+            <motion.div className="flex flex-col justify-center items-center sm:flex-row gap-2 px-4 text-lg font-medium"
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
                     delay: 0.15
                 }}>
                 <Link href="#contact"
-                    className="group tracking-tighter bg-gray-900 text-white px-7 py-3 flex justify-center items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">
+                    className="group tracking-tighter bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">
                     Contact Me Here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
                 </Link>
 

@@ -3,10 +3,20 @@
 import React from 'react'
 import SectionHeading from './SectionHeading'
 import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import { useActiveSectionContext } from '@/context/ActiveSectionContext'
 
 export default function About() {
+    const { ref, inView } = useInView();
+    const { setActiveSection } = useActiveSectionContext();
+
+    if (inView) {
+        setActiveSection("About");
+    }
+    
     return (
-        <motion.section className="text-center mb-28 max-w-[45rem] leading-8 scroll-mt-28"
+        <motion.section className="text-center mb-28 max-w-[45rem] sm:mb-40 leading-8 scroll-mt-28"
+        ref={ref}
         initial={{ opacity: 0, y: 100}}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.175 }}
