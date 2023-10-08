@@ -11,10 +11,10 @@ import { useSectionInView } from '@/lib/hooks'
 
 
 export default function Projects() {
-    const { ref } = useSectionInView('Projects');
+    const { ref } = useSectionInView('Projects', 0.5);
     
     return (
-        <motion.section id="projects" className="scroll-mt-28" ref={ref}>
+        <section id="projects" className="scroll-mt-28 mb-28" ref={ref}>
             <SectionHeading>
                 Projects
             </SectionHeading>
@@ -28,6 +28,6 @@ export default function Projects() {
                     ))
                 }
             </div>
-        </motion.section>
+        </section>
     )
 }
