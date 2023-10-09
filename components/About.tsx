@@ -19,9 +19,18 @@ export default function About() {
         id="about">
             <SectionHeading>About Me</SectionHeading>
 
-            <p className="mb-3">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ut asperiores ab vero nulla sint, dicta, minus nobis dolorum quidem dolores 
+                incidunt aspernatur iure excepturi labore obcaecati quia rem ipsum temporibus?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ut asperiores ab vero nulla sint, dicta, minus nobis dolorum quidem dolores 
+                incidunt aspernatur iure excepturi labore obcaecati quia rem ipsum temporibus?
+            </p>
+
+            {/* <p className="mb-3">
                 After graduating with a degree in{" "}
-                <span className="font-medium">Accounting</span>, I decided to pursue my
+                <span className="font-medium">Engineering</span>, I decided to pursue my
                 passion for programming. I enrolled in a coding bootcamp and learned{" "}
                 <span className="font-medium">full-stack web development</span>.{" "}
                 <span className="italic">My favorite part of programming</span> is the
@@ -44,7 +53,7 @@ export default function About() {
                 learning about{" "}
                 <span className="font-medium">history and philosophy</span>. I'm also
                 learning how to play the guitar.
-            </p>
+            </p> */}
         </motion.section>
     )
 }
