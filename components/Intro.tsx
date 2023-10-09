@@ -79,11 +79,11 @@ export default function Intro() {
                     Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
                 </a>
 
-                <a href="https://www.linkedin.com/in/alfredsylvanalfonso/" target="_blank" className="flex justify-center bg-white p-4 text-gray-700 gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition select-none cursor-pointer borderBlack">
+                <a href="https://www.linkedin.com/in/alfredsylvanalfonso/" target="_blank" className="flex justify-center bg-white p-4 text-gray-700 gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition select-none cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60">
                     <BsLinkedin/>
                 </a>
 
-                <a className="flex justify-center bg-white p-4 text-[1.35rem] text-gray-700 gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition select-none cursor-pointer borderBlack">
+                <a className="flex justify-center bg-white p-4 text-[1.35rem] text-gray-700 gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition select-none cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60">
                     <FaGithubSquare /> 
                 </a>
             </motion.div>
